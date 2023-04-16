@@ -76,4 +76,4 @@ def post_solve_level(room_nr, level_nr):
     os.remove(filename+".py")
     return jsonify(solution)
 
-app.run()
+app.run(debug=False,host='0.0.0.0')
